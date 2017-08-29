@@ -40,8 +40,8 @@ class App extends Component {
     });
   };
   sendAlert = () => {
+    alert('Alert sent');
     database().ref('alerts').push().set(this.state);
-    alert(`${this.state.title} + ${this.state.tweet}`);
   };
 
   render() {
